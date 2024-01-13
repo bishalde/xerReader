@@ -125,6 +125,6 @@ def upload_file():
         return jsonify(error=str(e))
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
     if shutdown_requested:
         jpype.shutdownJVM()
